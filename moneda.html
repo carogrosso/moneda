@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Moneda al aire</title>
+    <link rel="icon" href="img/ico.png">
+
+
+<style>
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+
+    #contenedor{
+        margin-left: 25%;
+        margin-right: 25%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 30px;
+        border: 2px solid black;
+    }
+    #contenedor button{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #contenedor img{
+        width: 300px;
+    }
+    .presentacion{
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+</style>
+
+</head>
+
+<body>
+    <div id="contenedor">
+        <h1>Bienvenido!</h1>
+        <h2 class="presentacion">La moneda de la suerte te ayudará a decidir... Empecemos.</h2>
+        <button id="btn">Tirar moneda</button>
+        <img src="" alt="" id="image">
+        <h1 id="txt"></h1>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+    var boton = document.getElementById("btn");
+    var imagen = document.getElementById("image");
+    var txt = document.getElementById("txt");
+
+    boton.addEventListener("click", () => {
+        imagen.src = "img/loading.gif";
+        txt.innerHTML = "La moneda está girando...";
+        setTimeout(function () {
+        var numeroRandom = Math.round(Math.random() * (1-0)+1);
+        if (numeroRandom == 1){
+            console.log ("cara")
+            txt.innerHTML = "Cara"
+            image.src = "img/cara.png"
+        } else {
+            console.log ("ceca")
+            txt.innerHTML = "Ceca"
+            image.src = "img/ceca.png"
+        }
+    }, 1000);
+    });
+    
+    </script>
+</body>
+</html>
