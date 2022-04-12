@@ -1,0 +1,28 @@
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+#contenedor{
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+#contenedor button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#contenedor img{
+    width: 300px;
+}
+.presentacion{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
