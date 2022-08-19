@@ -1,13 +1,18 @@
 h1{
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-h2{
+
+body{
+    background-image: url(../img/fondo.jpg);
     font-family: 'Montserrat', sans-serif;
-    font-style: italic;
 }
 #contenedor{
+    background-color: #fff;
     margin-left: 25%;
     margin-right: 25%;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -19,10 +24,16 @@ h2{
     margin-bottom: 20px;
 }
 #contenedor img{
-    width: 300px;
+    width: 280px;
 }
 .presentacion{
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
+}
+
+footer{
+    margin-top: 30px;
+    text-align: center;
+    background-color: #fff;
 }
